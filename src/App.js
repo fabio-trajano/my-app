@@ -7,6 +7,8 @@ import Intro3 from './components/Intro3';
 import Promo from './components/Promo';
 import Card from './components/Card';
 import "./App.css";
+import {Routes, Route} from 'react-router-dom'
+import ReactPlayer from 'react-player';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
     alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
   }
 
+  const vidUrl = "https://www.youtube.com/watch?v=4LSHnxrbmFw";
   return (
     <div className="App">
       <Heading name="Fabio" />
@@ -30,6 +33,11 @@ function App() {
         <Card h2="Second card's h2" h3="Second card's h3"/>
         <Card h2= "Third card's h2" h3="Third card's h3"/>
       </div>
+      <ReactPlayer
+        url={vidUrl}
+        playing={false}
+        volume={0.6}
+      />
       <Intro1 />
       <Intro2 />
       <Intro3 />
