@@ -9,7 +9,7 @@ import Promo from './components/Promo';
 function App() {
   return (
     <div className="App">
-      <Heading />
+      <Heading name="Fabio" />
       <Nav />
       <Intro1 />
       <Intro2 />
